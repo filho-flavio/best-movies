@@ -1,0 +1,117 @@
+.container {
+  overflow: hidden;
+  max-width: 100vw;
+  padding-top: 5vw;
+}
+
+.container .title {
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 4.1rem;
+}
+
+.title .query-text {
+  color: #f7d354;
+}
+
+.highlight-container {
+  width: 100%;
+}
+
+.highlight-container div {
+
+  animation: about-animation 15s linear infinite;
+  width: 80vw;
+  color: #fff;
+}
+
+.highlight-title {
+  font-size: 10vw;
+  width: 100%;
+
+  background: linear-gradient(45deg, #dfc3c3, #6a6363, #a16f6f, #4b4a4a, #e0c6c6);
+  background-size: 400% 100%;
+  animation: degradeBg 5s linear infinite alternate;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 3rem;
+  width: 100vw;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.movies-container div {
+  width: 22%;
+  min-width: 10rem;
+  color: #fff;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #111;
+  padding: 1rem;
+}
+
+.movies-container div img {
+  max-width: 100%;
+}
+
+.movies-container div img,
+.movies-container div p {
+  margin-bottom: 1rem;
+}
+
+.movies-container div h2 {
+  margin-bottom: 1.5rem;
+}
+
+.movies-container div svg {
+  color: #f7d354;
+}
+
+.movies-container div a {
+  background-color: #cf3b3b;
+  border: 2px solid #cf3b3b;
+  border-radius: 4px;
+  color: #000;
+  height: 3vw;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movies-container div a:hover {
+  background-color: transparent;
+  color: #cf3b3b;
+}
+
+@keyframes about-animation {
+  from {
+    transform: translateX(50%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes degradeBg {
+  0% {
+    background-position-x: 0%;
+  }
+
+  100% {
+    background-position: 100%;
+  }
+}

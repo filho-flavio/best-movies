@@ -1,0 +1,29 @@
+.movie-page .movie-card {
+    text-align: center;
+}
+
+.movie-card {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 0.5vw;
+}
+
+.movie-page .movie-card img,
+.movie-page .movie-card h2,
+.movie-page .movie-card p {
+    margin-bottom: 1rem;
+}
+
+.movie-card-rate .movie-card-img-rate {
+    color: #f7d354;
+}
+
+.movie-page .movie-card h2 {
+    font-size: 2rem;
+}
+
+.movie-page .movie-card p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
